@@ -1,0 +1,7 @@
+module Rails
+  module Patch
+    module JsonEncoderRefactorBackport
+      VERSION = "0.0.1"
+    end
+  end
+end
