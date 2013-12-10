@@ -72,17 +72,15 @@ class ThreadExt < ActiveSupport::TestCase
     end
   end
 
-  if RUBY_VERSION < '2.1.0'
-    def test_thread_variable_security
-      t = Thread.new { sleep }
+  def test_thread_variable_security
+    t = Thread.new { sleep }
 
-      assert_raises(SecurityError) do
-        Thread.new { $SAFE = 4; t.thread_variable_get(:foo) }.join
-      end
+    assert_raises(SecurityError) do
+      Thread.new { $SAFE = 4; t.thread_variable_get(:foo) }.join
+    end
 
-      assert_raises(SecurityError) do
-        Thread.new { $SAFE = 4; t.thread_variable_set(:foo, :baz) }.join
-      end
+    assert_raises(SecurityError) do
+      Thread.new { $SAFE = 4; t.thread_variable_set(:foo, :baz) }.join
     end
   end
 end
