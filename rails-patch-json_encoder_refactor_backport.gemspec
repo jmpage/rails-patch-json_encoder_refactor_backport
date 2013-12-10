@@ -21,4 +21,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency             "activesupport",   ">= 4.0.0", "< 4.1"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+  spec.rdoc_options.concat ['--encoding',  'UTF-8']
+
+  spec.add_dependency 'i18n',       '~> 0.6', '>= 0.6.4'
+  spec.add_dependency 'json',       '~> 1.3'
+  spec.add_dependency 'tzinfo',     '~> 0.3.37'
+  spec.add_dependency 'minitest',   '~> 4.2'
+  spec.add_dependency 'thread_safe','~> 0.1'
 end
