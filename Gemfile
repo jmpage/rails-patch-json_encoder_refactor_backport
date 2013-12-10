@@ -4,5 +4,6 @@ source 'https://rubygems.org'
 gemspec
 
 group :test do
-  gem 'activesupport-json_encoder', github: 'activesupport-json_encoder'
+  # use forked gem which has been modified to work with rails 4.0
+  gem 'activesupport-json_encoder', git: 'https://github.com/jmpage/activesupport-json_encoder.git'
 end
