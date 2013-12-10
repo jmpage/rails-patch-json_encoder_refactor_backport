@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jen Page", "Joe Hughes"]
   spec.email         = ["jenipage1989@gmail.com", "jjhughes57@gmail.com"]
   spec.description   = "Provides refactored JSON Encoder functionality from Rails 4.1"
-  spec.summary       = "Provides refactored JSON Encoder functionality (extrated from Rails 4.1)"
+  spec.summary       = "Provides refactored JSON Encoder functionality (extracted from Rails 4.1)"
   spec.homepage      = ""
   spec.license       = "MIT"
 
