@@ -5,7 +5,7 @@ gemspec
 
 gem 'dalli', '>= 2.2.1'
 gem "activesupport",   ">= 4.0.0", "< 4.1"
-gem 'builder', '~> 2.0'
+gem 'builder', '~> 3.0'
 gem 'mocha', '~> 0.13.0', require: false
 
 group :test do
