@@ -1,5 +1,5 @@
 require 'active_support/json/encoding'
-require 'active_support/core_ext/object/json' # TODO: may need to modify this
+#require 'active_support/core_ext/object/json' # TODO: may need to modify this
 #require 'active_support/core_ext/module/delegation'
 #require 'active_support/json/variable'
 
